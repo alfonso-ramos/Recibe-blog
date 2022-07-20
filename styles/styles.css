@@ -1,5 +1,10 @@
 :root {
-    /* Agrega las fuentes aqui */
+    --montserrat: 'Montserrat', sans-serif;
+    --playfair-display: 'Playfair Display', serif;
+    --orange: #F2994A;
+    --soft-gray: #BDBDBD;
+    --gray: #828282;
+
 }
 html{
     box-sizing: border-box;
@@ -11,7 +16,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-family: /*Agrega la fuente de prefenecia*/;
+    font-family: var(--montserrat);
     font-size: 1.6rem;
     line-height: 2rem;
 }
@@ -25,15 +30,17 @@ a{
     text-decoration: none;
 }
 h1,h2{
-    font-family: /*Agrega la variable de feunte de preferencia*/;
+    font-family: var(--playfair-display);
 }
 h1{
-    font-size: 4.8rem;
+    font-size: 2.4rem;
 }
 h2{
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
-
+p{
+    font-size: 1.4rem;
+}
 img{
     max-width: 100%;
 }
@@ -52,4 +59,60 @@ img{
 }
 .italic{
     font-style: italic;
+}
+.font-playfair{
+    font-family: var(--playfair-display);
+}
+.orange-color{
+    color: var(--orange);
+}
+.soft-gray-color{
+    color: var(--soft-gray);
+}
+.gray-color{
+    color: var(--gray);
+}
+/* Variations */
+
+
+.yields{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.times-info-container{
+    display: flex;
+}
+.time-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Instrutions container */
+.instruction{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+.numberedSquare{
+    background-color: var(--orange);
+    border-radius: .5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--playfair-display);
+    height: 3.7rem;
+    width: 3.7rem;
+}
+.numberedSquare p{
+    font-size: 2rem;
+    margin: 1rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
 }
